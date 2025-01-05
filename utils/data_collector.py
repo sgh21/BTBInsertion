@@ -33,7 +33,7 @@ def random_pose(robot_init_pose,bound = (0.01,0.01,5/180*np.pi)):
     
 def main():
     hostname = '192.168.0.10'
-    serial_type = '4034P'
+    serial_type = '4040P'
     ur = UR.URController(hostname)
     mvs_control = MVS.MVSController()
     mvs_control.init()
