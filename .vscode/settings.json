@@ -2,14 +2,13 @@
     
     "python.analysis.extraPaths": [
         "${workspaceFolder}/src",
-        "${workspaceFolder}/thirdparty/ultralytics",
         "${workspaceFolder}/thirdparty/hardware_control",
+        "/home/ral/sgh_workstation/WorkSpace/ultralytics",
     ],
     "python.autoComplete.extraPaths": [
-        
         "${workspaceFolder}/src",
-        "${workspaceFolder}/thirdparty/ultralytics",
         "${workspaceFolder}/thirdparty/hardware_control",
+        "/home/ral/sgh_workstation/WorkSpace/ultralytics",
     ],
     "terminal.integrated.env.linux": {
         "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/src:${workspaceFolder}/thirdparty/hardware_control"
@@ -17,4 +16,5 @@
     "terminal.integrated.env.windows": {
         "PYTHONPATH": "${workspaceFolder};${workspaceFolder}/src;${workspaceFolder}/thirdparty/hardware_control"
     },
+    
 }

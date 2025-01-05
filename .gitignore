@@ -3,5 +3,6 @@
 /thirdparty/gsrobotics/
 /thirdparty/ultralytics/
 
-/documents/
 /experiments/
+
+/.vscode/setting.json
