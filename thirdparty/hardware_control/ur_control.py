@@ -1,6 +1,7 @@
 import rtde_receive
 import rtde_control 
-
+import sys
+print(sys.path)
 class URController:
    
     def __init__(self, hostname,**kwargs):

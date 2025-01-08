@@ -52,11 +52,13 @@ import os
 data_dir = PARAMS['experiment_dir']
 csv_file = os.path.join(data_dir, 'exp_generalization_tranditional_vision_0104','vision_experiment_4040P.csv')
 print(csv_file)
-result, upper_bound, sigma = calculate_3sigma_mean(csv_file, 'error_angle_deg')
-print(f"error_angle_deg - Mean: {result:.4f}, Upper bound: {upper_bound:.4f}, Sigma: {sigma:.4f}")
 
-result, upper_bound, sigma = calculate_3sigma_mean(csv_file, 'error_x_mm')
+
+result, upper_bound, sigma = calculate_3sigma_mean(csv_file, 'abs_error_x_mm')
 print(f"error_x_mm - Mean: {result:.4f}, Upper bound: {upper_bound:.4f}, Sigma: {sigma:.4f}")
 
-result, upper_bound, sigma = calculate_3sigma_mean(csv_file, 'error_y_mm')
+result, upper_bound, sigma = calculate_3sigma_mean(csv_file, 'abs_error_y_mm')
 print(f"error_y_mm - Mean: {result:.4f}, Upper bound: {upper_bound:.4f}, Sigma: {sigma:.4f}")
+
+result, upper_bound, sigma = calculate_3sigma_mean(csv_file, 'abs_error_angle_deg')
+print(f"error_angle_deg - Mean: {result:.4f}, Upper bound: {upper_bound:.4f}, Sigma: {sigma:.4f}")

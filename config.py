@@ -8,7 +8,7 @@ EXPERIMENT_DIR = os.path.join(WORK_DIR, 'experiments')
 DATA_DIR = os.path.join(WORK_DIR, 'documents')
 # 在相机上的初始位姿势[x,y,z,r,p,y] mm,deg
 # ! 请注意：这里的单位与机器人控制时并不统一，只是为了便于调试
-ROBOT_INIT_POSE = [-107,-549,262.5,-180,0,90]
+ROBOT_INIT_POSE = [-106,-548,250,-180,0,90]
 # 相机内参 rx = focal_length / pixel_width
 # 相机内参 ry = focal_length / pixel_height
 INTRINSIC = [-0.0206,-0.0207]

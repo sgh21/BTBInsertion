@@ -68,14 +68,14 @@ def main():
         os.makedirs(image)
     if not os.path.exists(image_result):
         os.makedirs(image_result)
-    counter = 0
-    for i in range(200):
+    counter = 200
+    for i in range(300):
     # while True:
         time.sleep(1)
+        counter += 1
         img = mvs_control.get_image()
         img_path = os.path.join(image, f'image_{serial_type}_{counter}.png')
         cv2.imwrite(img_path, img)
-        counter += 1
         yolo_result = yolo.predict(img, padding=30, area_threshold=1e2)
         cut_img_list = yolo.cut_image()
         
